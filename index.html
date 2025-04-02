@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Sederhana</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#beranda">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#prestasi">Prestasi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="beranda" class="container mt-5 text-center">
+        <h2>Beranda</h2>
+        <img src="profile.jpg.jpg" class="rounded-circle" width="150" alt="Foto Profil">
+        <p><strong>Nama:</strong> George David Josef Calvin Sirait</p>
+        <p><strong>Tanggal Lahir:</strong> 18 Juni 2005</p>
+        <p><strong>Jenis Kelamin:</strong> Laki-laki</p>
+        <p><strong>Alamat:</strong> Bekasi, Jawa Barat</p>
+        <p><strong>Hobi:</strong> Berenang</p>
+    </section>
+
+    <section id="portfolio" class="container mt-5">
+        <h2>Portfolio</h2>
+        <p>Beberapa proyek yang telah saya buat:</p>
+        <ul>
+            <li>-</li>
+        </ul>
+    </section>
+
+    <section id="prestasi" class="container mt-5">
+        <h2>Prestasi</h2>
+        <p>Sertifikasi dan pencapaian saya:</p>
+        <ul>
+            <li>-</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="container mt-5">
+        <h2>Contact</h2>
+        <p>Email: gedavid842@gmai.com</p>
+        <p>Telepon: +62 821-1225-4732</p>
+        <form id="contactForm">
+            <div class="mb-3">
+                <label for="name" class="form-label">Nama</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Pesan</label>
+                <textarea class="form-control" id="message" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Contact Me</button>
+        </form>
+        <button onclick="goToBeranda()" class="btn btn-secondary mt-3">Kembali ke Beranda</button>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
